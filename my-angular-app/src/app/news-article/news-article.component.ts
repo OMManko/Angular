@@ -13,10 +13,6 @@ export class NewsArticleComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private news: NewsDataService) { }
 
-  removeNews() {
-    console.log("News will be deleted");
-  }
-
   ngOnInit() {
     this.newsId = this.route.snapshot.params['id']
   }

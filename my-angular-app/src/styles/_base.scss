@@ -58,6 +58,9 @@ app-footer {
   margin-left: 10px;
 }
 
+.btn:disabled {
+  opacity: 0.2;
+}
 
 .app-page-title {
   text-align: center;

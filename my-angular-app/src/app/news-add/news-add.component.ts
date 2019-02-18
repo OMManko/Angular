@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {NewsDataService} from '../news-data.service';
+
 
 @Component({
   selector: 'app-news-add',
@@ -7,20 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsAddComponent implements OnInit {
 
-  public title: String = 'Add news';
-
   constructor() { }
 
-
-  save() {
-    console.log("Saved");
-  }
-
-  cancel() {
-    window.history.back();
-  }
+  public addForm: boolean = true;
 
   ngOnInit() {
+
   }
 
 }

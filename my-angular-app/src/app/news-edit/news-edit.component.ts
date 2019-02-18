@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-news-edit',
@@ -8,14 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NewsEditComponent implements OnInit {
 
   constructor() { }
-
-  save() {
-    console.log("Saved");
-  }
-
-  cancel() {
-    window.history.back();
-  }
 
   ngOnInit() {
   }
